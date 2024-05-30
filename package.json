@@ -6,9 +6,28 @@
   "types": "dist/types/index.d.ts",
   "main": "dist/cjs/vue-mouse-zoom.js",
   "module": "dist/es/vue-mouse-zoom",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/cjs/vue-mouse-zoom.js",
+      "import": "./dist/es/vue-mouse-zoom.js"
+    },
+    "./style": {
+      "require": "./dist/style.css",
+      "import": "./dist/style.css"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
   "scripts": {
-    "dev": "vite",
     "build": "vue-tsc && vite build",
+    "watch": "vite build --watch",
     "preview": "vite preview"
   },
   "dependencies": {
