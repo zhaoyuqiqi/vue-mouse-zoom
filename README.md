@@ -39,7 +39,7 @@ Components are written in TypeScript, so they are naturally type-friendly.
 
 # Install
 
-[npm package](https://www.npmjs.com/package/@arco-design/web-react)
+[npm package](https://www.npmjs.com/package/vue-mouse-zoom)
 
 ```bash
 // npm
