@@ -181,6 +181,7 @@ const onMouseUpOrLeave = () => {
 <template>
   <div
     class="container"
+    style="width: 100%; height: 100%; overflow: hidden; overscroll-behavior-x: none"
     @wheel.capture="onWheel"
     @mousedown="onMouseDown"
     @mouseup="onMouseUpOrLeave"
@@ -195,32 +196,18 @@ const onMouseUpOrLeave = () => {
     <section
       class="section"
       ref="section"
+      style="
+        width: max-content;
+        transform-origin: 0 0 !important;
+        -webkit-user-select: none; /* Chrome/Opera/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE/Edge */
+        user-select: none;
+      "
       :style="style"
     >
-      <slot :isWheel="isWheel"></slot>
+      <slot :isWheel="isWheel" />
     </section>
   </div>
 </template>
 
-<style scoped>
-.container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  overscroll-behavior-x: none;
-}
-.section {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  width: max-content;
-  transform-origin: 0 0 !important;
-  -webkit-user-select: none; /* Chrome/Opera/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE/Edge */
-  user-select: none; /* Standard syntax */
-}
-</style>

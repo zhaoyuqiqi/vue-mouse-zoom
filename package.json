@@ -28,11 +28,17 @@
   "scripts": {
     "build": "vue-tsc && vite build",
     "watch": "vite build --watch",
-    "preview": "vite preview"
+    "prepublishOnly": "pnpm run build"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "vue": "^3.4.21"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.2.2",
