@@ -1,7 +1,29 @@
 {
   "name": "vue-mouse-zoom",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "author": {
+    "name": "zhaoyuqiqi",
+    "email": "1940988349@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhaoyuqiqi/mouse-zoom.git"
+  },
+  "keywords": [
+    "zoom",
+    "vue",
+    "mouse",
+    "draggable",
+    "zoomable",
+    "zooming",
+    "center",
+    "ctrl",
+    "meta"
+  ],
+  "files": [
+    "dist"
+  ],
+  "version": "0.1.0",
   "type": "module",
   "types": "dist/types/index.d.ts",
   "main": "dist/cjs/vue-mouse-zoom.js",
@@ -36,9 +58,6 @@
   "dependencies": {
     "vue": "^3.4.21"
   },
-  "files": [
-    "dist"
-  ],
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.2.2",
