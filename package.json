@@ -1,6 +1,7 @@
 {
   "name": "vue-mouse-zoom",
   "private": false,
+  "version": "1.0.2",
   "author": {
     "name": "zhaoyuqiqi",
     "email": "1940988349@qq.com"
@@ -9,6 +10,7 @@
     "type": "git",
     "url": "https://github.com/zhaoyuqiqi/mouse-zoom.git"
   },
+  "license": "MIT",
   "homepage": "https://github.com/zhaoyuqiqi/mouse-zoom",
   "keywords": [
     "zoom",
@@ -24,7 +26,6 @@
   "files": [
     "dist"
   ],
-  "version": "1.0.1",
   "type": "module",
   "types": "dist/types/index.d.ts",
   "main": "dist/cjs/vue-mouse-zoom.js",
@@ -34,10 +35,6 @@
       "types": "./dist/types/index.d.ts",
       "require": "./dist/cjs/vue-mouse-zoom.js",
       "import": "./dist/es/vue-mouse-zoom.js"
-    },
-    "./style": {
-      "require": "./dist/style.css",
-      "import": "./dist/style.css"
     }
   },
   "typesVersions": {
@@ -56,8 +53,8 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "dependencies": {
-    "vue": "^3.4.21"
+  "peerDependencies": {
+    "vue": ">=3.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
