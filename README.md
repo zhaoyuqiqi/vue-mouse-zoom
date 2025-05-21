@@ -19,7 +19,7 @@ English | [简体中文](./README.zh-CN.md)
 
 # Demo
 
-![demo](https://pic4.58cdn.com.cn/nowater/webim/big/n_v21530bf1669a945e193502b34065740bd.gif)
+![demo](/20240531174402_rec_.gif)
 
 # Feature
 
